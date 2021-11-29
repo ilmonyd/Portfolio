@@ -13,10 +13,6 @@ const AboutSectionStyles = styled.div`
     justify-content: flex-start;
     text-align: left;
   }
-  .aboutSection__left,
-  .aboutSection__right {
-    flex: 1;
-  }
   .section-title {
     text-align: left;
   }
@@ -26,6 +22,35 @@ const AboutSectionStyles = styled.div`
     justify-content: flex-start;
     gap: 2rem;
     margin-top: 2rem;
+  }
+  @media only screen and (max-width: 768px) {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .aboutSection_left,
+    .aboutSection_right {
+      width: 100%;
+    }
+    .section-title {
+      text-align: center;
+    }
+    .para {
+      margin: 0 auto;
+      margin-top: 1rem;
+    }
+    .aboutSection_buttons {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .aboutSection_buttons {
+      flex-direction: column;
+      gap: 0rem;
+    }
   }
 `;
 
