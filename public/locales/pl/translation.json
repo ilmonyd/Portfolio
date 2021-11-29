@@ -1,0 +1,17 @@
+{
+  "nav_Home": "Strona Główna",
+  "nav_About": "O mnie",
+  "nav_Projects": "Projekty",
+  "nav_Contact": "Kontakt",
+  "banner_Hello": "Cześć, nazywam się",
+  "banner_GitHub": "Sprawdź mój GitHub",
+  "banner_Bio": "Jestem aspirującym frontend developerem studiującym informatykę stosowaną na Uniwersytecie Jagiellońskim w Krakowie.",
+  "about_Intro": "Pozwól mi sie przedstawić",
+  "about_About": "O mnie",
+  "about_Works": "Prace",
+  "services_Head": "Usługi",
+  "services_Sub": "Co mogę dla Ciebie zrobić",
+  "services_WebDesign_desc": "Wykonuję projekt ui/ux dla stron internetowych, który pomaga im uzyskać wyjątkowy wygląd.",
+  "services_WebDev_desc": "Tworzę również strony internetowe o wysokiej wydajności z niesamowitą szybkością.",
+  "services_Responsive_desc": "Tworzę responsywne strony internetowe z efektownym UI dla wszystkich potrzeb mobilnych."
+}

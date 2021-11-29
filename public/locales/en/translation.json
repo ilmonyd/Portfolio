@@ -1,0 +1,17 @@
+{
+  "nav_Home": "Home",
+  "nav_About": "About",
+  "nav_Projects": "Projects",
+  "nav_Contact": "Contact",
+  "banner_Hello": "Hello, this is",
+  "banner_GitHub": "Check out my GitHub",
+  "banner_Bio": "I am an aspiring frontend developer studying applied computer science at Jagiellonian University in Cracow.",
+  "about_Intro": "Let me introduce myself",
+  "about_About": "About me",
+  "about_Works": "Works",
+  "services_Head": "Services",
+  "services_Sub": "What i can do for you",
+  "services_WebDesign_desc": "I do ui/ux design for the website that helps website to get a unique look.",
+  "services_WebDev_desc": "I also develop high performance websites with blazing fast speed.",
+  "services_Responsive_desc": "I develop responsive websites with eye catching ui for all the mobile needs."
+}
