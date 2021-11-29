@@ -6,8 +6,9 @@ import Button from './Button';
 import PText from './PText';
 
 const BannerStyles = styled.div`
+  padding-top: 1rem;
   .container {
-    height: 100vh;
+    height: 99vh;
     min-height: 900px;
     width: 100%;
     text-align: center;
@@ -69,34 +70,6 @@ const BannerStyles = styled.div`
     }
     .banner_info {
       margin-top: 3rem;
-    }
-    .banner_social {
-      left: 0px;
-      bottom: 15px;
-      width: 20px;
-      .banner_social_indicator {
-        width: 20px;
-        p {
-          font-size: 1.2rem;
-        }
-        img {
-          max-height: 20px;
-        }
-      }
-      .banner_social_content {
-        ul {
-          display: flex;
-          flex-direction: row;
-          gap: 1rem;
-          li {
-            a {
-              font-size: 1.2rem;
-              margin-bottom: 1rem;
-              transform: none;
-            }
-          }
-        }
-      }
     }
   }
 `;
