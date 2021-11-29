@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdMenu, MdClose } from 'react-icons/md';
+import { useTranslation } from 'react-i18next';
+
+import LanguageSwitch from './LanguageSwitch';
 
 const NavMenuStyle = styled.div`
   position: fixed;
@@ -34,6 +37,13 @@ const NavMenuStyle = styled.div`
     }
     .active {
       color: white;
+    }
+    @media only screen and (min-width: 768px) {
+      li:last-child {
+        position: absolute;
+        right: 1rem;
+        background-color: var(--deep-dark);
+      }
     }
   }
   .mobile-menu-icon {
@@ -89,6 +99,8 @@ const NavMenuStyle = styled.div`
 
 export default function NavMenu() {
   const [showNav, setShowNav] = useState(false);
+  const { t } = useTranslation();
+
   return (
     <NavMenuStyle>
       <div
@@ -119,7 +131,7 @@ export default function NavMenu() {
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            Home
+            {t('nav_Home')}
           </NavLink>
         </li>
         <li>
@@ -130,7 +142,7 @@ export default function NavMenu() {
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            About
+            {t('nav_About')}
           </NavLink>
         </li>
         <li>
@@ -141,11 +153,14 @@ export default function NavMenu() {
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            Projects
+            {t('nav_Projects')}
           </NavLink>
         </li>
         <li>
-          <a href="mailto:olegsem23@gmail.com">Contact</a>
+          <a href="mailto:olegsem23@gmail.com">{t('nav_Contact')}</a>
+        </li>
+        <li>
+          <LanguageSwitch />
         </li>
       </ul>
     </NavMenuStyle>

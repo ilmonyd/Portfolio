@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 import PText from './PText';
 import Button from './Button';
 import SectionTitle from './SectionTitle';
@@ -29,21 +30,19 @@ const AboutSectionStyles = styled.div`
 `;
 
 export default function AboutSection() {
+  const { t } = useTranslation();
   return (
     <AboutSectionStyles>
       <div className="container">
         <div className="aboutSection_left">
           <SectionTitle
             className="section-title"
-            sub="Let me introduce myself"
-            head="About Me"
+            sub={t('about_Intro')}
+            head={t('about_About')}
           />
-          <PText>
-            I am an aspiring frontend developer studying applied computer
-            science at Jagiellonian University in Cracow.
-          </PText>
+          <PText style={{ 'text-align': 'right' }}>{t('banner_Bio')}</PText>
           <div className="aboutSection_buttons">
-            <Button fill btnLink="/projects" btnText="Works" />
+            <Button fill btnLink="/projects" btnText={t('about_Works')} />
             <Button
               external
               btnLink="https://www.linkedin.com/in/oleg-semenov-776a18210/"

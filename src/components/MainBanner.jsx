@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 import BannerImg from '../assets/images/bannerImg.png';
 import Button from './Button';
 import PText from './PText';
@@ -101,24 +102,22 @@ const BannerStyles = styled.div`
 `;
 
 export default function MainBanner() {
+  const { t } = useTranslation();
   return (
     <BannerStyles>
       <div className="container">
         <h1 className="banner_heading">
-          <span>Hello, this is</span>
+          <span>{t('banner_Hello')}</span>
           <span className="banner_name">Oleg Semenov</span>
         </h1>
         <div className="banner_image">
           <img src={BannerImg} alt="" />
         </div>
         <div className="banner_info">
-          <PText>
-            I am an aspiring frontend developer studying applied computer
-            science at Jagiellonian University in Cracow.
-          </PText>
+          <PText>{t('banner_Bio')}</PText>
           <Button
             btnLink="https://www.github.com/ilmonyd"
-            btnText="Check out my GitHub"
+            btnText={t('banner_GitHub')}
             fill
             external
           />
