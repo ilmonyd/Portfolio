@@ -13,5 +13,7 @@
   "services_Sub": "What i can do for you",
   "services_WebDesign_desc": "I do ui/ux design for the website that helps website to get a unique look.",
   "services_WebDev_desc": "I also develop high performance websites with blazing fast speed.",
-  "services_Responsive_desc": "I develop responsive websites with eye catching ui for all the mobile needs."
+  "services_Responsive_desc": "I develop responsive websites with eye catching ui for all the mobile needs.",
+  "projects_Head": "Work in progress...",
+  "projects_Sub": "This section will be available later, after backend is developed"
 }
